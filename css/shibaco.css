@@ -110,3 +110,12 @@ dd span {
 	font-size: 1.2em;
 	font-weight: 600;
 }
+@media screen and (max-width: 767px) {
+	.img-box {
+	    display: inherit;
+	}
+	.zoom {
+		float: inherit;
+		max-width: 100%;
+	}
+}
