@@ -53,7 +53,8 @@ dd span {
 	position: relative;
 }
 .movie,
-#lightgallery {
+#lightgallery,
+.img-box {
     max-width: 1000px;
     margin: 0 auto 50px;
 }
@@ -69,14 +70,43 @@ dd span {
     #lightgallery {
         max-width: 250px;
     }
-    .text {
-        padding: 0 20px 0;
-        position: relative;
-    }
 }
 #lightgallery a {
     display: inline-block;
 }
 #lightgallery a img {
     padding: 2px 5px;
+}
+.img-box {
+	display: flex;
+}
+.zoom {
+	float: left;
+	max-width: 50%;
+	padding: 20px;
+}
+.zoom img {
+	width: 100%;
+	transition-duration: 0.3s;
+	border-radius:10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+}
+#lightgallery a img:hover,
+.zoom img:hover {
+	opacity:0.8;
+    filter:alpha(opacity=80);
+    transition: transform 0.5s linear;
+	transform: scale(1.05);
+	transition-duration: 0.3s;
+}
+.zoom img:hover {
+	box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+}
+.zoom p {
+	text-align: center;
+	padding-top: 15px;
+}
+.site-name {
+	font-size: 1.2em;
+	font-weight: 600;
 }

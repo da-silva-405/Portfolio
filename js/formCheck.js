@@ -7,8 +7,8 @@ $form.addEventListener('input', update);
 
 // デフォルトではEnterキー押下でも送信されてしまうのでsubmitイベントで制御する
 $form.addEventListener('submit', () => {
-	//e.preventDefault();
-	$form.submit();
+	e.preventDefault();
+	//$form.submit();
 });
 
 function update(e) {

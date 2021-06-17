@@ -111,11 +111,6 @@ footer {
 		text-align: center;
 	}
 }
-@media only screen and (max-width: 514px) {
-    .title h2 {
-        font-size: 60px;
-    }
-}
 /*fade-in------------------------------*/
 .fade-in {
     animation-name: fadein;
