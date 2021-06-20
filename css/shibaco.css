@@ -61,16 +61,6 @@ dd span {
 .movie video {
   width: 100%;
 }
-@media only screen and (max-width: 1199px) {
-    #lightgallery {
-        max-width: 500px;
-    }
-}
-@media only screen and (max-width: 514px) {
-    #lightgallery {
-        max-width: 250px;
-    }
-}
 #lightgallery a {
     display: inline-block;
 }
@@ -110,7 +100,19 @@ dd span {
 	font-size: 1.2em;
 	font-weight: 600;
 }
+@media only screen and (max-width: 1199px) {
+	.text {
+		padding: 0 30px 0;
+	}
+	#lightgallery a img {
+		float: left;
+		width: 44vw;
+	}
+}
 @media screen and (max-width: 767px) {
+	.text {
+		padding: 0 20px 0;
+	}
 	.img-box {
 	    display: inherit;
 	}
