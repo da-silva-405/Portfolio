@@ -57,15 +57,27 @@ dd span {
 .img-box {
     max-width: 1000px;
     margin: 0 auto 50px;
+    display: flow-root;
 }
 .movie video {
   width: 100%;
+}
+#lightgallery .imgs {
+   float: left;
+   width: 25%;
+   text-align: center;
+}
+@media only screen and (max-width: 991px) {
+	#lightgallery .imgs {
+	   width: 50%;
+	}
 }
 #lightgallery a {
     display: inline-block;
 }
 #lightgallery a img {
     padding: 2px 5px;
+    width: 100%;
 }
 .img-box {
 	display: flex;
@@ -103,10 +115,6 @@ dd span {
 @media only screen and (max-width: 1199px) {
 	.text {
 		padding: 0 30px 0;
-	}
-	#lightgallery a img {
-		float: left;
-		width: 44vw;
 	}
 }
 @media screen and (max-width: 767px) {
