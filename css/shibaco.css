@@ -4,6 +4,10 @@
 * {
   box-sizing: border-box;
 }
+section {
+	margin-bottom: 2em;
+	display: flow-root;
+}
 h3 {
 	  font-family: 'Cinzel Decorative', cursive;
 	  font-size: 25px;
@@ -38,7 +42,7 @@ h3::after {
 	 border-right-color: #fff;
 }
 .profile {
-	margin: 10px 0 50px;
+	margin-top: 10px;
 }
 dt {
 	font-size: 0.9em;
@@ -49,43 +53,56 @@ dd span {
 	color: #aaa;
 }
 .text {
-	padding: 0 50px 0;
+	padding: 0 30px 0;
 	position: relative;
 }
 .movie,
-#lightgallery,
+.gallery,
 .img-box {
     max-width: 1000px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
     display: flow-root;
 }
 .movie video {
   width: 100%;
 }
-#lightgallery .imgs {
+.gallery .imgs {
    float: left;
    width: 25%;
    text-align: center;
 }
+.slime .imgs {
+   width: 20%;
+}
 @media only screen and (max-width: 991px) {
-	#lightgallery .imgs {
+	.gallery .imgs {
 	   width: 50%;
 	}
 }
-#lightgallery a {
+.gallery a {
     display: inline-block;
 }
-#lightgallery a img {
+.gallery a img {
     padding: 2px 5px;
     width: 100%;
 }
 .img-box {
-	display: flex;
+	display: flow-root;
 }
-.zoom {
+.zoom, .disp-half {
 	float: left;
 	max-width: 50%;
-	padding: 20px;
+	padding: 0 20px;
+}
+.disp-half {
+	padding-top: 20px;
+}
+.disp-half img {
+	width: 100%;
+	margin: 0 auto;
+}
+.disp-half p {
+	text-align: center;
 }
 .zoom img {
 	width: 100%;
@@ -93,12 +110,12 @@ dd span {
 	border-radius:10px;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
 }
-#lightgallery a img:hover,
+.gallery a img:hover,
 .zoom img:hover {
 	opacity:0.8;
     filter:alpha(opacity=80);
     transition: transform 0.5s linear;
-	transform: scale(1.05);
+	transform: scale(1.03);
 	transition-duration: 0.3s;
 }
 .zoom img:hover {
@@ -114,12 +131,12 @@ dd span {
 }
 @media only screen and (max-width: 1199px) {
 	.text {
-		padding: 0 30px 0;
+		padding: 0 20px 0;
 	}
 }
 @media screen and (max-width: 767px) {
 	.text {
-		padding: 0 20px 0;
+		padding: 0 10px 0;
 	}
 	.img-box {
 	    display: inherit;
@@ -128,4 +145,14 @@ dd span {
 		float: inherit;
 		max-width: 100%;
 	}
+}
+.marker-yellow {
+	background: linear-gradient(transparent 70%, #ffffa8 0%);
+	display: table;
+	margin: 0 auto;
+}
+.clearfix::after {
+content: "";
+display: block;
+clear: both;
 }
