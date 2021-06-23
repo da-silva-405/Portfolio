@@ -8,6 +8,10 @@ section {
 	margin-bottom: 2em;
 	display: flow-root;
 }
+hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 h3 {
 	  font-family: 'Cinzel Decorative', cursive;
 	  font-size: 25px;
@@ -41,9 +45,6 @@ h3::after {
 	 border-color: transparent;
 	 border-right-color: #fff;
 }
-.profile {
-	margin-top: 10px;
-}
 dt {
 	font-size: 0.9em;
 	color: #555;
@@ -53,17 +54,22 @@ dd span {
 	color: #aaa;
 }
 .text {
-	padding: 0 30px 0;
+	padding: 1em 30px 0;
 	position: relative;
 }
-.movie,
 .gallery,
 .img-box {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flow-root;
+}
+.movie {
     max-width: 1000px;
     margin: 0 auto;
     display: flow-root;
 }
-.movie video {
+.movie video,
+.movie iframe {
   width: 100%;
 }
 .gallery .imgs {
@@ -131,7 +137,7 @@ dd span {
 }
 @media only screen and (max-width: 1199px) {
 	.text {
-		padding: 0 20px 0;
+		padding: 1em 20px 0;
 	}
 }
 @media screen and (max-width: 767px) {
