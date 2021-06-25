@@ -1,21 +1,19 @@
 @charset "UTF-8";
 @import url(style.css);
 
-html,body{
-    padding:0;
-    margin:0;
-    height:100%
+.box{
+    height: 80vh;
+    position: relative;
+    text-align: center;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-.container {
-  flex: 1 1 100%;
+.inner{
+    left: 50%;
+    position: absolute;
+    top: 50%;
 }
 .title {
-	padding: 180px 0 0;
+	padding: 10em 0;
+    transform: translate(-50%,-50%);
 }
 p.subTitle {
 	font-size: 16px;
@@ -27,4 +25,24 @@ p.gotoTop {
 }
 p.gotoTop a {
 	color: #aaa;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+}
+.title h2 {
+	font-family: 'Allura', cursive;
+	font-size: 70px;
+	color: #ffffff59;
+	transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    text-align: center;
+    padding-top: 15px;
+    display: inline-block;
+}
+p.subTitle {
+	margin-top: -50px;
+	font-size: 20px;
 }

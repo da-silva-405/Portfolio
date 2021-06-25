@@ -11,29 +11,15 @@
 	<link rel="stylesheet" href="css/shibaco.css">
 </head>
 <body>
+<div class="wrapper">
 	<header>
-		<div id="header">
-			<h1><a href="index.html" >Portfolio</a></h1>
+		<div id="head-img">
+			<img src="images/common/aboutus.png" width="800">
 		</div>
-	    <div id="navToggle">
-	      <div>
-	       <span></span> <span></span> <span></span>
-	      </div>
-	    </div><!--#navToggle END-->
-		<nav>
-			<ul>
-				<li><a href="index.html"><i class="fa fa-diamond" aria-hidden="true"></i>about us SHIBACO</a></li>
-				<li><a href="contact.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>CONTACT</a></li>
-			</ul>
-		</nav>
 	</header>
 	<main>
 		<div class="container">
 			<div class="fade-in">
-			   	<div class="title">
-				        <h2>Shibaco</h2>
-				        <p class="subTitle">about us</p>
-		    	</div>
 		        <section>
 		        	<h3>Profile&emsp;</h3>
 		        	<div class="profile">
@@ -43,8 +29,8 @@
 			        			<dd>柴戸&nbsp;陽子<span>Shibaco Yoco</span></dd>
 			        			<dt>Self introduction</dt>
 			        			<dd>
-                                    前職はソフトウェア会社の制作部でデザイナーとして働いておりました。画面デザインの他、新しいコンテンツの企画や制作部のチーフとしてマネジメント業務も行っておりました。<br />
-                                    8年4ヶ月勤め、色々なことを経験させていただいた中で特に興味を持ったのはプログラミング言語です。これを覚えれたら更に仕事にやりがいを感じれると思い、今回プログラミング訓練を受講致しました。
+                                    前職はソフトウェア会社の制作部でデザイナーとして働いておりました。画面デザインのほかに新規コンテンツの企画や、制作部のチーフとして後輩の育成やスケジュール管理などマネジメント業務も行っておりました。<br />
+                                    8年4ヶ月勤め、様々なことを経験させて頂いた中で、特に興味を持ったのはプログラミング言語です。これを覚えれたら更に仕事にやりがいを感じれると思い、今回プログラミング訓練を受講致しました。
                                 </dd>
 			        		</dl>
 		        		</div>
@@ -54,33 +40,31 @@
 		        	<h3>Programming&emsp;</h3>
                     <div class="text">
                         <p>
-                            課題内容：<a href="images/instructions.pdf" target="_blank">ドラクエ風RPG説明書</a><br />
+                            課題内容：<a href="images/programming/instructions.pdf" target="_blank">ドラクエ風RPG説明書</a><br />
                             ソースコード：<a href="https://github.com/da-silva-405/RPG.git" target="_blank">GitHub</a><br />
                             制作期間：約1ヶ月
                         </p>
                         <p>
                             ドラクエ風RPGの制作。JSP/サーブレット/MySQL間での「値の受け渡し」の方法と、MVC(Model/View/Controller)モデルの基礎を学んでからの制作でしたが、学習ではテキスト通りにやれば出来て、理解も出来ていたつもりでいたのですが、実際自分で一から作るとなると、値の受け渡しが上手くいかなかったり、main.classだけで動かすのとは違い、画面の表示も関係してきたので作り上げるまでに時間がかかりました。<br/>
                             <br/>
-                            アピールポイントは、オリジナルのモンスターです。ポートフォリオでお見せするのであれば、著作権的にドラクエの画像を使用するわけにもいけないので、スライムで統一させて作成しました。
+                            アピールポイントは、オリジナルのモンスターです。ポートフォリオに掲載するにあたって著作権的にドラクエの画像を使用するわけにもいけないので、スライムで統一させて作成しました。
                         </p>
                     </div>
                     <div class="movie">
-                        <video src="images/SLIME QUEST.mp4" controls></video>
+                        <video src="images/programming/SLIME QUEST.mp4" controls></video>
                     </div>
                 </section>
 		        <section>
                     <h3>Practice&emsp;</h3>
-                    <div class="text">
+                    <div class="text fade-up">
                         <p>チーム開発演習では100個近くのバグが仕込まれた勤怠管理システムをチームで担当分けし修正。
-                            私はバグ修正以外にも、デザインの変更の担当になりました。
-                            コンセプトは「大人可愛い」。こだわったところは、直観で動かせる分かりやすいデザインにしたとこです。<br/>
-                            背景が水色の分は修正前の画面キャプチャーです。<br/>
+                            私はバグ修正以外にも、デザインの変更の担当になりました。背景が水色の分は修正前の画面キャプチャーです。<br/>
                             <br/>
                             苦労した点は、このシステムを開発されたのは10年以上前で、その頃の主流であろうtableの中に複数のtableが入っており表がズレていました。<br/>
                             これを修正するためにtableを一本化していったのですが、tableの中にはlogic:iterateタグなども含まれていたので、一本化するにあたり動作が壊れないように気をつけながら修正を行いました。
                         </p>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery fade-up">
                     	<div class="imgs">
                     		<a href="images/practice/login_b.jpg" data-lightbox="practice"><img src="images/practice/login_b.jpg" width="240"></a>
                     	</div>
@@ -111,20 +95,6 @@
                     	<div class="imgs">
                     		<a href="images/practice/kinmu.jpg" data-lightbox="practice"><img src="images/practice/kinmu.jpg" width="240"></a>
                     	</div>
-                    	<!--
-                    	<div class="imgs">
-                    		<a href="images/practice/kibou_b.jpg" data-lightbox="practice"><img src="images/practice/kibou_b.jpg" width="240"></a>
-                    	</div>
-                    	<div class="imgs">
-                    		<a href="images/practice/kibou.jpg" data-lightbox="practice"><img src="images/practice/kibou.jpg" width="240"></a>
-                    	</div>
-                    	<div class="imgs">
-                    		<a href="images/practice/shain_b.jpg" data-lightbox="practice"><img src="images/practice/shain_b.jpg" width="240"></a>
-                    	</div>
-                    	<div class="imgs">
-                    		<a href="images/practice/shain.jpg" data-lightbox="practice"><img src="images/practice/shain.jpg" width="240"></a>
-                    	</div>
-                    	 -->
                     	<div class="imgs">
                     		<a href="images/practice/shift_b.jpg" data-lightbox="practice"><img src="images/practice/shift_b.jpg" width="240"></a>
                     	</div>
@@ -135,7 +105,7 @@
 		        </section>
 		        <section>
 		        	<h3>Works&emsp;</h3>
-                    <div class="text">
+                    <div class="text fade-up">
                         <p>
                             <span class="site-name">産宮神社－さんのみやじんじゃ－</span><br />
                             Planning / Design / HTML5 / CSS3 / JavaScript / Responsive<br />
@@ -149,16 +119,16 @@
                             訪問してくださった方にも見やすく辿り着きやすい&nbsp;UI/UXを意識したデザインで制作しました。
                         </p>
                     </div>
-                    <div class="img-box">
+                    <div class="img-box fade-up">
 	                    <div class="zoom">
 	                        <a href="http://sannomiyajinja.or.jp/index.html" target="_blank">
-	                            <img src="images/sannomiya_01.jpg" width="1000px" />
+	                            <img src="images/works/sannomiya_01.jpg" width="1000px" />
 	                        </a>
 	                        <p>2011年版</p>
 	                    </div>
 	                    <div class="zoom">
 	                        <a href="http://sannomiyajinja.or.jp/test2/index.html" target="_blank">
-	                            <img src="images/sannomiya_02.jpg" width="1000px" />
+	                            <img src="images/works/sannomiya_02.jpg" width="1000px" />
 	                        </a>
 	                        <p class="marker-yellow">リニューアル版</p>
 	                    </div>
@@ -166,7 +136,7 @@
                 </section>
 		        <section>
                     <h3>Design&emsp;</h3>
-                    <div class="text clearfix">
+                    <div class="text clearfix fade-up">
                         <p>
                             <span class="site-name">福岡県交通安全協会「入会システム」</span><br />
                             Design<br />
@@ -178,7 +148,7 @@
                             ファイル転送中や削除中など待ち時間がかかるものにもキャラクターを使用するなど遊び心のあるGIFアニメーションを作成しました。
                         </p>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery fade-up">
                     	<div class="imgs">
                     		<a href="images/ankyo/ankyo_01.jpg" data-lightbox="ankyo"><img src="images/ankyo/ankyo_01.jpg" width="240"></a>
                     	</div>
@@ -192,7 +162,7 @@
                     		<a href="images/ankyo/ankyo_04.jpg" data-lightbox="ankyo"><img src="images/ankyo/ankyo_04.jpg" width="240"></a>
                     	</div>
                     </div>
-                    <div class="img-box">
+                    <div class="img-box fade-up">
 						<div class="disp-half">
 							<img src="images/ankyo/gif_DataTransfer_play.gif" onclick="this.setAttribute('src', this.getAttribute('src').replace(/_play.gif$/g, '.gif'));" style="cursor: pointer;">
 	                		<p>GIFアニメ（クリックで再生）</p>
@@ -203,7 +173,7 @@
 						</div>
 					</div>
 					<hr>
-                    <div class="text clearfix">
+                    <div class="text clearfix fade-up">
                         <p>
                             <span class="site-name">デジタルブック</span><br />
                             Design / Flippingbook Publisher<br />
@@ -213,25 +183,29 @@
                             提出いただいた資料や画像を元にデジタルブックの制作を行いました。
                         </p>
                     </div>
-                    <div class="movie">
+                    <div class="movie fade-up">
                     	<iframe src="https://www.planavi.net/sunlife/HSG/ebook/000/" width="1000" height="650"></iframe>
                     </div>
 					<hr>
-                    <div class="text clearfix">
+                    <div class="text clearfix fade-up">
+						<div class="disp-L">
                         <p>
                             <span class="site-name">Webアプリのリニューアル</span><br />
                             Design / HTML5 / CSS3  / JavaScript / Responsive<br />
                             制作期間：約2ヶ月
                         </p>
-                        <p>
-                            結婚式までの打合せを行うWebアプリのデザインのリニューアルを行いました。<br />
-                            長年ご使用いただいているプランナー様もいらっしゃるのでPC版では配置を変えずにデザインだけリニューアルし、お客様モードでは、お昼休みなどにも使えるようにモバイル対応に変更いたしました。
+	                        <p>
+	                            結婚式までの打合せを行うWebアプリのリニューアルを行いました。<br />
+	                            長年ご使用いただいているプランナー様もいらっしゃるのでPC版では配置を変えずにデザインだけリニューアルし、お客様モードでは、お昼休みなどにも使えるようにモバイル対応に変更いたしました。
                         </p>
+                        </div>
+						<div class="disp-R fade-up">
+	                    	<div class="imgs">
+	                    		<a href="images/app/app_01.jpg" data-lightbox="app"><img src="images/app/app_01.jpg" width="240"></a>
+	                    	</div>
+						</div>
                     </div>
-                    <div class="slime gallery">
-                    	<div class="imgs">
-                    		<a href="images/app/app_01.jpg" data-lightbox="app"><img src="images/app/app_01.jpg" width="240"></a>
-                    	</div>
+                    <div class="gallery fade-up">
                     	<div class="imgs">
                     		<a href="images/app/app_02.jpg" data-lightbox="app"><img src="images/app/app_02.jpg" width="240"></a>
                     	</div>
@@ -246,7 +220,7 @@
                     	</div>
                     </div>
 					<hr>
-                    <div class="text clearfix">
+                    <div class="text clearfix fade-up">
                         <p>
                             <span class="site-name">アプリ販促資料</span><br />
                             Design<br />
@@ -256,7 +230,7 @@
                             営業でデモをする際にお渡しする資料の作成。テキストが多すぎると流し読みをされてしまうので、要点を軸に構成し最小限のテキストと画像で伝わるように作成しました。
                         </p>
                     </div>
-                    <div class="gallery">
+                    <div class="gallery fade-up">
                     	<div class="imgs">
                     		<a href="images/pnavi/PlannerNAVI_01.jpg" data-lightbox="pnavi"><img src="images/pnavi/PlannerNAVI_01.jpg" width="240"></a>
                     	</div>
@@ -271,7 +245,7 @@
                     	</div>
                     </div>
 					<hr>
-                    <div class="text clearfix">
+                    <div class="text clearfix fade-up">
                         <p>
                             <span class="site-name">イラスト</span><br />
                             Design<br />
@@ -282,7 +256,7 @@
                             ボス：スライム仙人　中雑魚：スライム博士／オニオンスライム　小雑魚：スライム男爵／フェアリースライム
                         </p>
                     </div>
-                    <div class="slime gallery">
+                    <div class="slime gallery fade-up">
                     	<div class="imgs">
                     		<a href="images/slime/slime_01.jpg" data-lightbox="slime"><img src="images/slime/slime_01.jpg" width="240"></a>
                     	</div>
@@ -300,14 +274,24 @@
                     	</div>
                     </div>
 		        </section>
+				<nav>
+					<ul>
+						<li><a href="index.html"><i class="fa fa-diamond" aria-hidden="true"></i>about us SHIBACO</a></li>
+						<li><a href="contact.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>CONTACT</a></li>
+					</ul>
+				</nav>
 	    	</div>
 	    </div>
 		<div id="gotoTop"><a href="#"></a></div>
 	</main>
 	<footer>&copy; Shibaco</footer>
+	<div class="top-leaf"><img src="images/common/top-leaf.png" width="600"></div>
+	<div class="bottom-lace"><img src="images/common/bottom-lace.png" width="600"></div>
+</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/gotoTop.js"></script>
 	<script type="text/javascript" src="js/openNav.js"></script>
+	<script type="text/javascript" src="js/fade-up.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 <script type="text/javascript">

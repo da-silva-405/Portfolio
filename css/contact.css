@@ -11,7 +11,7 @@ p.subTitle {
 p.greeting {
 	position: relative;
 	padding: 1em;
-	margin: 1.5rem 0;
+	margin: 3em 0;
 	font-size: 90%;
 }
 p.greeting::before,

@@ -4,13 +4,9 @@
 * {
   box-sizing: border-box;
 }
-section {
-	margin-bottom: 2em;
-	display: flow-root;
-}
 hr {
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 h3 {
 	  font-family: 'Cinzel Decorative', cursive;
@@ -21,7 +17,7 @@ h3 {
 	 padding: 0 1em;
 	 background-color: #f0f0f0;
 	 display: inline-block;
-	 margin-left: -30px;
+	 margin-left: -47px;
 }
 h3::before,
 h3::after {
@@ -54,7 +50,7 @@ dd span {
 	color: #aaa;
 }
 .text {
-	padding: 1em 30px 0;
+	padding-top: 1em;
 	position: relative;
 }
 .gallery,
@@ -117,7 +113,8 @@ dd span {
 	box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
 }
 .gallery a img:hover,
-.zoom img:hover {
+.zoom img:hover,
+.disp-R img:hover {
 	opacity:0.8;
     filter:alpha(opacity=80);
     transition: transform 0.5s linear;
@@ -135,14 +132,9 @@ dd span {
 	font-size: 1.2em;
 	font-weight: 600;
 }
-@media only screen and (max-width: 1199px) {
-	.text {
-		padding: 1em 20px 0;
-	}
-}
 @media screen and (max-width: 767px) {
 	.text {
-		padding: 0 10px 0;
+	padding-top: 0;
 	}
 	.img-box {
 	    display: inherit;
@@ -150,6 +142,32 @@ dd span {
 	.zoom {
 		float: inherit;
 		max-width: 100%;
+	}
+}
+.disp-L {
+	float: left;
+	max-width: 60%;
+	padding-right: 1em;
+}
+.disp-R {
+	float: right;
+	max-width: 40%;
+}
+.disp-R .imgs img {
+	width: 100%;
+	padding-left: 1em;
+	padding-right: 5px;
+	padding-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+	.disp-L, .disp-R {
+		max-width: 100%;
+	}
+	.disp-L {
+		padding-right: 0;
+	}
+	.disp-R .imgs img {
+		padding-left: 5px;
 	}
 }
 .marker-yellow {
