@@ -8,7 +8,7 @@ hr {
     margin-top: 3em;
     margin-bottom: 2em;
 }
-h3 {
+p.profile {
 	  font-family: 'Cinzel Decorative', cursive;
 	  font-size: 25px;
 	 position: relative;
@@ -19,12 +19,12 @@ h3 {
 	 display: inline-block;
 	 margin-left: -47px;
 }
-h3::before,
-h3::after {
+p.profile::before,
+p.profile::after {
 	 content: '';
 	 position: absolute;
 }
-h3::before {
+p.profile::before {
 	 top: 100%;
 	 left: 0;
 	 border-width: 0 15px 15px 0;
@@ -32,7 +32,7 @@ h3::before {
 	 border-color: transparent;
 	 border-right-color: #ccc;
 }
-h3::after {
+p.profile::after {
 	 top: 0;
 	 right: 0;
 	 z-index: 2;
@@ -40,6 +40,32 @@ h3::after {
 	 border-style: solid;
 	 border-color: transparent;
 	 border-right-color: #fff;
+}
+h3 {
+	font-family: 'Amatic SC', cursive;
+	color: #fff;
+	text-align: center;
+    font-size: 4em;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+}
+h3::before,
+h3::after {
+	content: '';
+	width: 3px;
+	height: 55px;
+	background-color: #f1b6bd;
+}
+
+h3::before {
+	margin-right: 30px;
+	transform: rotate(-35deg)
+}
+h3::after {
+	margin-left: 30px;
+	transform: rotate(35deg)
 }
 dt {
 	font-size: 0.9em;
@@ -145,15 +171,15 @@ dd span {
 	height: 6px;
 	box-sizing: border-box;
 	bottom: 0;
-	border-top: 1px solid #efe5d6;
-	border-bottom: 2px solid #efe5d6;
+	border-top: 1px solid #c5db67;
+	border-bottom: 2px solid #c5db67;
 }
 @media screen and (max-width: 767px) {
-	h3 {
+	p.profile {
 		 margin-left: -31px;
 	}
 	.text {
-	padding-top: 0;
+		padding-top: 0;
 	}
 	.img-box {
 	    display: inherit;

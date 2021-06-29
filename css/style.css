@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 html,body{
     padding:0;
@@ -11,7 +12,6 @@ html,body{
 }
 body {
 	background-image: url("../images/common/bg.jpg");
-	font-family: 'Noto Serif JP', "Times New Roman", serif;
 	font-weight: 300;
 	background-repeat: repeat;
 	font-size: 1em;
@@ -34,13 +34,10 @@ header {
 #head-img img {
 	width: 100%;
 }
-main {
-	 position: relative;
-}
 .container {
     padding-bottom: 50px;
 }
-section {
+.content {
 	background-color: #fff;
 	margin-bottom: 2em;
 	display: flow-root;
@@ -96,7 +93,7 @@ footer {
 	}
 }
 @media only screen and (max-width: 767px) {
-	section {
+	.content {
 		padding: 2em 1em;
 	}
 }
@@ -187,7 +184,6 @@ footer {
     max-width: 450px;
 }
 .top-leaf img,
-.center-lace,
 .bottom-lace img {
 	width: 100%;
 }
