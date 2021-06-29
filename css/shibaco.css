@@ -7,6 +7,7 @@
 hr {
     margin-top: 3em;
     margin-bottom: 2em;
+   background-color: #aaa;
 }
 p.profile {
 	  font-family: 'Cinzel Decorative', cursive;
@@ -17,7 +18,8 @@ p.profile {
 	 padding: 0 1em;
 	 background-color: #f0f0f0;
 	 display: inline-block;
-	 margin-left: -47px;
+	 margin-left: -51px;
+	 color: #282a35;
 }
 p.profile::before,
 p.profile::after {
@@ -34,12 +36,12 @@ p.profile::before {
 }
 p.profile::after {
 	 top: 0;
-	 right: 0;
+	 right: -1px;
 	 z-index: 2;
 	 border-width: 25px 20px;
 	 border-style: solid;
 	 border-color: transparent;
-	 border-right-color: #fff;
+	 border-right-color: #282a35;
 }
 h3 {
 	font-family: 'Amatic SC', cursive;
@@ -69,12 +71,16 @@ h3::after {
 }
 dt {
 	font-size: 0.9em;
-	color: #555;
+	color: #aaa;
 	font-weight: 800;
 }
 dd span {
 	padding-left: 15px;
-	color: #aaa;
+	color: #ccc;
+}
+.rpg a {
+	color: #e4bfc3;
+	text-decoration: underline;
 }
 .text {
 	padding-top: 1em;
@@ -176,7 +182,7 @@ dd span {
 }
 @media screen and (max-width: 767px) {
 	p.profile {
-		 margin-left: -31px;
+		 margin-left: -43px;
 	}
 	.text {
 		padding-top: 0;
@@ -216,7 +222,7 @@ dd span {
 	}
 }
 .marker-yellow {
-	background: linear-gradient(transparent 70%, #ffffa8 0%);
+	background: linear-gradient(transparent 70%, #ffffa875 0%);
 	display: table;
 	margin: 0 auto;
 }
