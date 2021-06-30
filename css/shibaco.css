@@ -194,6 +194,9 @@ dd span {
 		float: inherit;
 		max-width: 100%;
 	}
+	.site-name {
+		font-size: 1.2em;
+	}
 }
 .disp-L {
 	float: left;
